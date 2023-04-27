@@ -1,0 +1,79 @@
+/* ==UserStyle==
+@name           V3RM THEME BY STACY
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A theme for V3rmillion.net
+@author         stacy#0049
+==/UserStyle== */
+
+@-moz-document domain("v3rmillion.net") {
+    /* Hides Dropdown menu top border */
+        ul.menu li ul {
+        border-top: 0px
+    }
+    /* Hides Useless Elements */
+    [class*="wrap"] > [id*="logo"] > a[href*="https://v3rmillion.net/index.php"], [class*="thead"] > [class*="expcolimage"] > [class*="expander"], [class*="red_alert"] > a[href*="showthread.php?tid=1181446"], [class*="red_alert"], [onclick*="MyAdvertisements.do_click(1);"], [id*="footer"], [class*="rules"], [class*="chatbox"], [class*="memberlist"], [href*="#"] {
+        display: none !important;
+}
+    /* Majority of the theming */
+    [class*="thead"] {
+        background: #101010;
+    }
+    [id*="bridge"] {
+        border-bottom: 0px !important;
+    }
+    [class*="forum_on"] {
+        color: #fff !important;
+    }
+    [class*="forum_off"] {
+        color: #818181 !important;
+    }
+    [class*="inline_row"] {
+        color: #b8b8b8 !important;
+    }
+    [class*="inline_row"] a {
+        color: #fff !important;
+    }
+    [class*="pagination"] a {
+        background: #222 !important;
+        border: 0px !important;
+    }
+    [class*="go_page"] > [src*="https://v3rmillion.net/images/vermillion/arrow_down.png"]     {
+        filter: grayscale(100%) !important;
+    }
+    [class*="tfoot"] {
+        background: #222 !important;
+    }
+    [class*="input"], [class*="button"] {
+        background: #333 !important;
+        border: 0px !important;
+    }
+    [class*="thread_head"] {
+        border-bottom: 0px;
+    }
+    [class*="postlink"] {
+        border: 1px solid #333
+    }
+    [class*="postbit_buttons"] {
+        background: #1a1a1a !important;
+    }
+    [class*="postbit_buttons"] > a:link {
+        background: #333;
+        border: 0px;
+    }
+    [src*="images/star.png"] {
+        filter: grayscale(100%) brightness(5)
+    }
+    /* new */
+    [class*="menu top_links"] {
+        text-align: center !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+    [class*="panel_links"] > li:nth-child(2):not(:hover) {
+        display: none !important;
+    }
+    [class*="panel_links"] > li:nth-child(3):not(:hover) {
+        display: none !important;
+    }
+}
