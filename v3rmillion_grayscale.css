@@ -6,27 +6,40 @@
 @homepageURL    https://github.com/vermstacy/css
 @author         stacy
 ==/UserStyle== */
-
 @-moz-document domain("v3rmillion.net") {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    /* Font Change */
+    * {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px
+    }
     /* Hides Dropdown menu top border */
-        ul.menu li ul {
+    ul.menu li ul {
         border-top: 0px
     }
     /* Hides Useless Elements */
-    [class*="wrap"] > [id*="logo"] > a[href*="https://v3rmillion.net/index.php"], [class*="thead"] > [class*="expcolimage"] > [class*="expander"], [class*="red_alert"] > a[href*="showthread.php?tid=1181446"], [class*="red_alert"], [onclick*="MyAdvertisements.do_click(1);"], [id*="footer"], [class*="rules"], [class*="chatbox"], [class*="memberlist"] {
+    [class*="wrap"] > [id*="logo"] > a[href*="https://v3rmillion.net/index.php"],
+    [class*="thead"] > [class*="expcolimage"] > [class*="expander"],
+    [class*="red_alert"] > a[href*="showthread.php?tid=1181446"],
+    [class*="red_alert"],
+    [onclick*="MyAdvertisements.do_click(1);"],
+    [id*="footer"],
+    [class*="rules"],
+    [class*="chatbox"],
+    [class*="memberlist"] {
         display: none !important;
-}
+    }
     [class*="menu"] > li:nth-child(7) > a:nth-child(1) {
-        display:none
+        display: none
     }
     .ddm_anchor > a:nth-child(1) {
-        display:none
+        display: none
     }
     [class*="ddm_anchor"] > [href*="#"] > strong:nth-child(1) {
-        display:none !important;
+        display: none !important;
     }
     [id*="upboat1308416"] > [href*="#likepid1308416"] {
-        display:block !important;
+        display: block !important;
     }
     /* Majority of the theming */
     [class*="thead"] {
@@ -51,13 +64,14 @@
         background: #222 !important;
         border: 0px !important;
     }
-    [class*="go_page"] > [src*="https://v3rmillion.net/images/vermillion/arrow_down.png"]     {
+    [class*="go_page"] > [src*="https://v3rmillion.net/images/vermillion/arrow_down.png"] {
         filter: grayscale(100%) !important;
     }
     [class*="tfoot"] {
         background: #222 !important;
     }
-    [class*="input"], [class*="button"] {
+    [class*="input"],
+    [class*="button"] {
         background: #333 !important;
         border: 0px !important;
     }
@@ -103,18 +117,19 @@
         box-shadow: 0 0 10px #7a7a7a;
     }
     /* Editors / Type Bars */
-    [class*="sceditor-container"], [dir*="ltr"] {
+    [class*="sceditor-container"],
+    [dir*="ltr"] {
         background-color: #101010 !important;
         color: white !important;
         border: 0px;
         padding-left: 3px !important;
     }
     [class*="sceditor-toolbar"] {
-        background:#1b1b1b !important;
+        background: #1b1b1b !important;
         border-bottom: 1px solid #2b2b2b !important;
     }
     [class*="sceditor-button"] {
-        background:#414141 !important;
+        background: #414141 !important;
     }
     [class*="select2-choices"] {
         background: #101010 !important;
@@ -125,7 +140,8 @@
         background: #101010 !important;
         color: white
     }
-    [class*="select2-searching"], div[class*="select2-drop-mask"] {
+    [class*="select2-searching"],
+    div[class*="select2-drop-mask"] {
         background: #101010 !important;
         background-color: #101010 !important;
         color: #101010 !important;
