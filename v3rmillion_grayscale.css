@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name           Minimal Dark V3rm
+@name           V3rmillion Grayscale
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        4.28.23
 @description    A theme for V3rmillion.net
 @homepageURL    https://github.com/vermstacy/css
 @author         stacy
@@ -9,9 +9,8 @@
 @-moz-document domain("v3rmillion.net") {
     @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     /* Font Change */
-    * {
+    body {
         font-family: 'Inter', sans-serif;
-        font-size: 15px
     }
     /* Hides Dropdown menu top border */
     ul.menu li ul {
@@ -42,6 +41,7 @@
         display: block !important;
     }
     /* Majority of the theming */
+    hr{border-bottom: solid thin #b4b4b4}
     [class*="thead"] {
         background: #101010;
     }
@@ -96,6 +96,7 @@
         filter: grayscale(100%) brightness(5)
     }
     [class*="menu top_links"] {
+        padding-left: 49px !important; /* Cenetered Buttons */
         text-align: center !important;
         align-content: center !important;
         align-items: center !important;
@@ -107,6 +108,7 @@
         display: none !important;
     }
     /* U */
+    [id*="copyright"]:before{content: "[Grayscale] | " !important;}
     [class*="sub_control"] {
         border: 0px;
         background: #313131;
@@ -156,5 +158,35 @@
     /* Button */
     [class*="expcolimage"] {
         display: none;
+    }
+    /* 4/28 */
+    [id*="content"] {
+        border-top: 0px !important;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    [class*="navigation"] {
+        border-bottom: 0px;
+        position: relative;
+        top: 20px !important;
+        padding-left: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    [class*="thread_head"], [id*="posts"] {
+        border-radius: 9px;
+    }
+    [class*="fa fa-thumbs-o-up"], [class*="fa fa-thumbs-up"] {
+        filter: grayscale(100%) !important;
+    }
+    [class*="fa fa-thumbs-o-down"], [class*="fa fa-thumbs-down"] {
+        filter: grayscale(100%) brightness(400%)
+    }
+    [class*="custom-menu"] {
+        background: #414141
+    }
+    [class*="author_statistics"] {
+        background-color: #2d2d2d !important;
+        padding: 8px !important;
     }
 }
